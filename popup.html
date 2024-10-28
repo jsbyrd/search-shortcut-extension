@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="toggle-container">
+      <label class="toggle-switch">
+        <input type="checkbox" id="shortcutsToggle" />
+        <span class="slider"></span>
+      </label>
+      <span>Enable Shortcuts</span>
+    </div>
+
+    <div class="shortcut-entry">
+      <h3>Add New Shortcut</h3>
+      <input type="text" id="shortcutKey" placeholder="Shortcut (e.g., !y)" />
+      <input
+        type="text"
+        id="shortcutValue"
+        placeholder="Value (e.g., site:youtube.com)"
+      />
+      <button id="addShortcut">Add</button>
+    </div>
+
+    <div class="shortcut-list">
+      <h3>Your Shortcuts</h3>
+      <div id="shortcutsList"></div>
+    </div>
+
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>
